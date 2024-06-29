@@ -1,4 +1,5 @@
 import About_me from "@/components/About_me";
+import My_skills from "@/components/My_skills";
 import React from "react";
 
 export default function page() {
@@ -12,8 +13,9 @@ export default function page() {
           WEB-DESIGNER
         </h1>
       </div>
-      <div className=" flex flex-col justify-center bg-white w-full py-12 items-center ">
+      <div  className="flex flex-col bg-white justify-center sm:items-center  py-12 space-y-12 px-10 ">
         <About_me />
+        <My_skills />
       </div>
     </div>
   );
