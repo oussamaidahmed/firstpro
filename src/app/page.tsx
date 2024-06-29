@@ -17,6 +17,7 @@ export default function page() {
         <About_me />
         <My_skills />
       </div>
+     
     </div>
   );
 }
