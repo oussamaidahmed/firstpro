@@ -28,7 +28,7 @@ export default function page() {
       </div>
       {/* buttons */}
       <div>
-        <div className="flex bg-white py-6 gap-6 justify-center items-center lg:gap-16 md:gap-16 sm:gap-5 sm:flex-col lg:flex-row md:flex-row">
+        <div className="flex bg-white py-6 pb-16 gap-6 justify-center items-center lg:gap-16 md:gap-16 sm:gap-5 sm:flex-col lg:flex-row md:flex-row flex-col">
           <Contact_Me_Button />
           <All_Projects_Button />
         </div>
