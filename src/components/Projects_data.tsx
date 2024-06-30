@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Contact_Me_Button from "./Contact_Me_Button";
 
-const Projects = [
+export const Projects = [
   {
     id: 1,
     name: "Project 1",
@@ -45,29 +44,29 @@ const Projects = [
     image: "/images/Project_card.png",
   },
 ];
+export default function Projects_Data({ numProjectsToShow }: { numProjectsToShow: number }) {
 
-export default function ProjectsData() {
+  const projectsToShow = Projects.slice(0, numProjectsToShow);
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-7 bg-white place-items-center p-10 lg:px-[60px] md:px-[60px]">
-      {Projects.map((project) => (
-        <div
-          key={project.id}
-          className="relative border border-black w-[280px] h-[360px]"
-        >
+    <div className=" justify-center place-items-center bg-white w-auto h-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-7   p-10 lg:px-[60px] md:px-[60px] ">
+      {projectsToShow.map((project) => (
+        <div key={project.id} className="relative  w-[282px] h-[354px]">
           <div className="p-5 absolute top-0 left-0 z-10">
-            <h2 className="font-league-spartan font-bold text-lg text-white">{project.name}</h2>
-            <p className="font-league-spartan font-normal text-md text-white">{project.description}</p>
+            <h2 className="font-league-spartan font-bold text-lg text-white">
+              {project.name}
+            </h2>
+            <p className="font-league-spartan font-normal text-md text-white">
+              {project.description}
+            </p>
           </div>
           <Image
             src={project.image}
             alt={project.name}
-            layout="fill"
-            objectFit="cover"
+            width={280}
+            height={354}
           />
         </div>
       ))}
-    <Contact_Me_Button />
-       
     </div>
   );
 }

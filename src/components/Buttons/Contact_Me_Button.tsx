@@ -1,20 +1,20 @@
 "use client";
+import Link from "next/link";
 import { TbArrowNarrowRight } from "react-icons/tb";
 
 export default function Contact_Me_Button() {
   return (
-    <div>
+    <Link href="/Contact_Me" >
       <button
         type="button"
         role="button"
         aria-label="Contact Me"
-        onClick={() => window.open("/Contact_Me")}
         title="Contact Me"
-        className="bg-red-600 hover:bg-gray-200 text-black font-bold py-4 px-16 "
+        className=" bg-[#D9D9D9] hover:bg-[#adadad] text-black font-bold lg:w-[230px] md:w-[230px] sm:w-[280px] w-[280px] h-16 flex flex-row justify-center items-center gap-1"
       >
         <TbArrowNarrowRight size={30} />
         Contact Me
       </button>
-    </div>
+    </Link>
   );
 }
