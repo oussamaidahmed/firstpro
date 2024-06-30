@@ -5,7 +5,7 @@ import logo from "../../public/images/rpLogoWhite.png";
 
 export default function Footer() {
   return (
-    <div className="relative  text-white flex lg:justify-around md:justify-around    w-auto bottom-10 h-auto  space-y-7 sm:flex-row  lg:flex-row md:flex-row flex-col  sm:justify-center items-center justify-center">
+    <div className="relative  text-white flex lg:justify-around md:justify-around w-auto bottom-10 h-auto space-y-7 sm:flex-col  lg:flex-row md:flex-row flex-col  sm:justify-center items-center justify-center">
       <div className=" flex space-x-10">
         <Link href="/Projects" className="hover:text-red-700">
           <p>Projects</p>
@@ -26,6 +26,7 @@ export default function Footer() {
           <Image src={logo} alt="Vercel Logo" width={60} height={60} />
         </div>
       </div>
+      
     </div>
   );
 }
