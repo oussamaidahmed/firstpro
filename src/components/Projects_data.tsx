@@ -48,7 +48,7 @@ export default function Projects_Data({ numProjectsToShow }: { numProjectsToShow
 
   const projectsToShow = Projects.slice(0, numProjectsToShow);
   return (
-    <div className="  justify-center place-items-center bg-white w-auto h-screen grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-7   p-10 lg:px-[60px] md:px-[60px] ">
+    <div className="  justify-center place-items-center bg-white w-auto  grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-7   p-10 lg:px-[60px] md:px-[60px] ">
       {projectsToShow.map((project) => (
         <div key={project.id} className="relative  w-[282px] h-[354px]">
           <div className="p-5 absolute top-0 left-0 z-10">

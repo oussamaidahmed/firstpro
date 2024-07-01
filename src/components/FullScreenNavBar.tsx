@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-
+import { PiInstagramLogoLight, PiTwitterLogo } from "react-icons/pi";
 
 function MobileNav({
   open,
@@ -18,44 +18,48 @@ function MobileNav({
     >
       <div className="  flex flex-row justify-around place-items-center h-screen">
         <div className="flex flex-row justify-around place-items-center">
-           <h1 className="rotate-[-90deg]  text-2xl font-medium font-league-spartan flex ">MENU</h1>
-           <div className="flex flex-col justify-center items-start space-y-7">
-          <Link
-            className="text-6xl font-bold hover:text-red-500 font-league-spartan  "
-            href="/"
-            onClick={() => setOpen(!open)}
-          >
-            Home
-          </Link>
-          <Link
-            className="text-6xl font-bold hover:text-red-500 font-league-spartan "
-            href="/About"
-            onClick={() => setOpen(!open)}
-          >
-            About
-          </Link>
-          <Link
-           className="text-6xl font-bold hover:text-red-500 font-league-spartan "
-            href="/Contact_Me"
-            onClick={() => setOpen(!open)}
-          >
-            ContactMe
-          </Link>
-          <Link
-            className="text-6xl font-bold hover:text-red-500 font-league-spartan "
-            href="/Projects"
-            onClick={() => setOpen(!open)}
-          >
-            Projects
-          </Link>
+          <h1 className="rotate-[-90deg]  text-2xl font-medium font-league-spartan flex ">
+            MENU
+          </h1>
+          <div className="flex flex-col justify-center items-start space-y-7">
+            <Link
+              className="text-6xl font-bold hover:text-red-500 font-league-spartan  "
+              href="/"
+              onClick={() => setOpen(!open)}
+            >
+              Home
+            </Link>
+            <Link
+              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              href="/About"
+              onClick={() => setOpen(!open)}
+            >
+              About
+            </Link>
+            <Link
+              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              href="/Contact_Me"
+              onClick={() => setOpen(!open)}
+            >
+              ContactMe
+            </Link>
+            <Link
+              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              href="/Projects"
+              onClick={() => setOpen(!open)}
+            >
+              Projects
+            </Link>
+          </div>
         </div>
-        </div>
-       
-       
 
         <div className="space-y-2 pl-4   text-xl font-medium font-league-spartan ">
           <p>idhmedo@gmail.com</p>
           <p>+2126 77 77 77 77</p>
+          <div className="flex space-x-3">
+            <PiInstagramLogoLight  size={30} />
+            <PiTwitterLogo  size={30} />
+          </div>
         </div>
       </div>
     </div>
