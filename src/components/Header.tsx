@@ -1,10 +1,11 @@
 import Image from "next/image";
 import logo from "../../public/images/rpLogoWhite.png";
-import { BiMenuAltRight } from "react-icons/bi";
+import FullScreenNavBar from '@/components/FullScreenNavBar'
+
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center lg:p-[40px] p-[50px] bg-black ">
+    <div className="fixed h-[100px] z-50 w-full flex justify-between items-center lg:p-[40px] p-[50px] bg-black ">
       <Image
         src={logo}
         alt="Vercel Logo"
@@ -13,7 +14,9 @@ export default function Header() {
         className="mr-4 "
       />
 
-      <BiMenuAltRight size={60} color="white" />
+      <div>
+        <FullScreenNavBar />
+      </div>
     </div>
   );
 }

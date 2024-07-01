@@ -7,7 +7,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="relative top-[-100px] ">
+    <div >
       <div className=" flex flex-col justify-center items-center gap-2  h-screen ">
         <h1 className="text-white text-5xl font-bold -tracking-widest font-league-gothic ">
           OUSSAMA ID AHMED
@@ -23,12 +23,11 @@ export default function page() {
       </div>
       {/* projects Preview */}
       <div>
-        
         <Projects_data numProjectsToShow={3} />
       </div>
       {/* buttons */}
       <div>
-        <div className="flex bg-white py-6 pb-16 gap-6 justify-center items-center lg:gap-16 md:gap-16 sm:gap-5 sm:flex-col lg:flex-row md:flex-row flex-col">
+        <div className=" flex bg-white py-6 pb-16 gap-6 justify-center items-center lg:gap-16 md:gap-16 sm:gap-5 sm:flex-col lg:flex-row md:flex-row flex-col">
           <Contact_Me_Button />
           <All_Projects_Button />
         </div>
