@@ -13,15 +13,15 @@ function MobileNav({
   return (
     <div
       className={`absolute top-0 left-0 h-screen w-full  bg-white transform ${
-        open ? "-translate-y-0 " : "-translate-y-full "
-      } transition-transform duration-300 ease-in-out filter `}
+        open ? "-translate-y-0  " : "-translate-y-full "
+      } transition-transform  duration-700 ease-in-out filter `}
     >
       <div className="  flex flex-row justify-around place-items-center h-screen">
         <div className="flex flex-row justify-around place-items-center">
            <h1 className="rotate-[-90deg]  text-2xl font-medium font-league-spartan flex ">MENU</h1>
            <div className="flex flex-col justify-center items-start space-y-7">
           <Link
-            className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+            className="text-6xl font-bold hover:text-red-500 font-league-spartan  "
             href="/"
             onClick={() => setOpen(!open)}
           >
@@ -53,7 +53,7 @@ function MobileNav({
        
        
 
-        <div className="space-y-2 pl-4 ">
+        <div className="space-y-2 pl-4   text-xl font-medium font-league-spartan ">
           <p>idhmedo@gmail.com</p>
           <p>+2126 77 77 77 77</p>
         </div>
