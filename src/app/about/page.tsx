@@ -1,6 +1,7 @@
 import React from "react";
 import { metadata } from "../layout";
 import Background from "@/components/AboutMeAndMore/Background";
+import Contact_Me_Button from "@/components/Buttons/Contact_Me_Button";
 
 
 metadata.title = "About";
@@ -18,6 +19,9 @@ export default function page() {
       </div>
       <div className="flex flex-col bg-white justify-center sm:items-center  py-12 space-y-12 px-10 ">
         <Background />
+      </div>
+      <div>
+        <Contact_Me_Button  />
       </div>
     </div>
   );

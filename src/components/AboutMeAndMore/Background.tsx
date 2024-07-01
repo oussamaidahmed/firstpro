@@ -8,7 +8,7 @@ export default function Background() {
       <h1 className="text-black font-league-spartan font-bold text-3xl tracking-tight ">
         About me
       </h1>
-      <div className=" space-y-10 text-black font-serif pt-2 lg:w-[550px] md:w-[550px] sm:w-[550px] ">
+      <div className=" space-y-10 text-black font-serif pt-10 w-auto max-w-[740px] ">
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -43,7 +43,7 @@ export default function Background() {
 
       {/* My Hobbies and Interests */}
 
-      <div className=" space-y-10 text-black font-serif pt-10 lg:w-[550px] md:w-[550px] sm:w-[550px] ">
+      <div className=" space-y-10 text-black font-serif pt-10 w-auto max-w-[740px] ">
         <h1 className="text-black font-bold text-3xl tracking-tight top-6 relative ">
           My Hobbies and Interests
         </h1>
