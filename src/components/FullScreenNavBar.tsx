@@ -20,33 +20,33 @@ function MobileNav({
 
 
         <div className="flex flex-row justify-around place-items-center">
-          <h1 className="rotate-[-90deg]  text-2xl font-medium font-league-spartan flex ">
+          <h1 className="rotate-[-90deg]  text-2xl font-medium  flex  ">
             MENU
           </h1>
-          <div className="flex flex-col justify-center items-start space-y-5">
+          <div className="flex flex-col justify-center items-start space-y-5 ">
             <Link
-              className="text-6xl font-bold hover:text-red-500 font-league-spartan  "
+              className="text-6xl font-black hover:text-red-500 "
               href="/"
               onClick={() => setOpen(!open)}
             >
               Home
             </Link>
             <Link
-              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              className="text-6xl font-black hover:text-red-500  "
               href="/About"
               onClick={() => setOpen(!open)}
             >
               About
             </Link>
             <Link
-              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              className="text-6xl font-black hover:text-red-500   "
               href="/Contact_Me"
               onClick={() => setOpen(!open)}
             >
-              ContactMe
+              Contact Me
             </Link>
             <Link
-              className="text-6xl font-bold hover:text-red-500 font-league-spartan "
+              className="text-6xl font-black hover:text-red-500 "
               href="/Projects"
               onClick={() => setOpen(!open)}
             >
@@ -75,12 +75,11 @@ export default function Navbar() {
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-11/12 flex justify-end items-center">
         <div
-          className="group z-50 relative w-8 h-6  cursor-pointer flex-col justify-between items-end flex"
+          className="group z-50 relative w-8 h-6  cursor-pointer flex-col justify-between items-end flex "
           onClick={() => {
             setOpen(!open);
           }}
         >
-          {/* hamburger button */}
           <span
             className={`h-1 w-[2.6rem] bg-black  cursor-pointer transform transition duration-300 ease-in-out ${
               open ? "rotate-45 translate-y-2.5" : " bg-white"

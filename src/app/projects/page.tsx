@@ -8,10 +8,10 @@ export default function page() {
   return (
     <div className="relative  place-items-center">
       <div className="  flex flex-col justify-center items-center gap-2  h-screen ">
-        <h1 className="text-white text-5xl font-bold -tracking-widest font-league-gothic ">
+        <h1 className="text-white text-5xl font-black -tracking-widest  ">
           MY PROJECTS
         </h1>
-        <h1 className="text-white text-2xl font-normal tracking-widest font-league-spartan ">
+        <h1 className="text-white text-xl font-normal tracking-widest  ">
           MADE WITH LOVE
         </h1>
       </div>
@@ -19,7 +19,9 @@ export default function page() {
         <Projects_data numProjectsToShow={Projects.length}/> 
        
       </div>
-      <div className="bg-white flex justify-center items-center py-9">
+      {/* Contact Me Button */}
+
+      <div >
          <Contact_Me_Button />
       </div>
       

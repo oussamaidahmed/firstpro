@@ -4,7 +4,8 @@ import { TbArrowNarrowRight } from "react-icons/tb";
 
 export default function Contact_Me_Button() {
   return (
-    <Link href="/Contact_Me" >
+    <div className="bg-white flex justify-center items-center py-9">
+       <Link href="/Contact_Me"  >
       <button
         type="button"
         role="button"
@@ -16,5 +17,7 @@ export default function Contact_Me_Button() {
         Contact Me
       </button>
     </Link>
+    </div>
+   
   );
 }

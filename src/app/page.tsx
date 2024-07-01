@@ -1,4 +1,4 @@
-import About_me from "@/components/About_me";
+import About_me from "@/components/AboutMeAndMore/About_me";
 import All_Projects_Button from "@/components/Buttons/All_Projects_Button";
 import Contact_Me_Button from "@/components/Buttons/Contact_Me_Button";
 import My_skills from "@/components/My_skills";
@@ -9,10 +9,10 @@ export default function page() {
   return (
     <div >
       <div className=" flex flex-col justify-center items-center gap-2  h-screen ">
-        <h1 className="text-white text-5xl font-bold -tracking-widest font-league-gothic ">
+        <h1 className="text-white text-5xl font-black -tracking-widest ">
           OUSSAMA ID AHMED
         </h1>
-        <h1 className="text-white text-2xl font-normal tracking-widest font-league-spartan ">
+        <h1 className="text-white text-xl font-normal tracking-widest ">
           WEB-DESIGNER
         </h1>
       </div>
@@ -27,7 +27,7 @@ export default function page() {
       </div>
       {/* buttons */}
       <div>
-        <div className=" flex bg-white py-6 pb-16 gap-6 justify-center items-center lg:gap-16 md:gap-16 sm:gap-5 sm:flex-col lg:flex-row md:flex-row flex-col">
+        <div className=" flex bg-white justify-center items-center lg:gap-16 md:gap-16  sm:flex-col lg:flex-row md:flex-row flex-col">
           <Contact_Me_Button />
           <All_Projects_Button />
         </div>
