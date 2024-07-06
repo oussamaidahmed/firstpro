@@ -50,7 +50,7 @@ export default function Projects_Data({
     <div className="  justify-center place-items-center bg-white w-auto  grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-12  p-10 lg:px-[60px] md:px-[60px] ">
       {projectsToShow.map((project) => (
         <Link
-          href={`/Projects/${project.id}`}
+          href={`/My_Projects/${project.id}`}
           key={project.id}
           className="relative  w-[282px] h-[354px]"
         >
