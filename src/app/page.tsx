@@ -14,7 +14,7 @@ export default function page() {
   return (
     <div>
       <div className=" flex flex-col justify-center items-center gap-2  h-screen ">
-        <h1 className="text-white text-2xl  sm:text-2xl md:text-4xl lg:text-5xl font-black -tracking-widest ">
+        <h1 className="text-white text-4xl  sm:text-4xl md:text-4xl lg:text-5xl font-black -tracking-widest ">
           OUSSAMA ID AHMED
         </h1>
         <h1 className="text-white text-xl font-normal tracking-widest ">
