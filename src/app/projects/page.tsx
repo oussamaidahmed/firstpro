@@ -21,7 +21,7 @@ export default function page() {
       </div>
       {/* Contact Me Button */}
 
-      <div >
+      <div className="bg-white p-10">
          <Contact_Me_Button />
       </div>
       

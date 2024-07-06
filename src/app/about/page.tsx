@@ -20,7 +20,7 @@ export default function page() {
       <div className="flex flex-col bg-white justify-center sm:items-center  py-12 space-y-12 px-10 ">
         <Background />
       </div>
-      <div>
+      <div className="bg-white p-10">
         <Contact_Me_Button  />
       </div>
     </div>
