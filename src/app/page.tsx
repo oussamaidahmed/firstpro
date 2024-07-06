@@ -3,7 +3,12 @@ import All_Projects_Button from "@/components/Buttons/All_Projects_Button";
 import Contact_Me_Button from "@/components/Buttons/Contact_Me_Button";
 import My_skills from "@/components/My_skills";
 import Projects_data from "@/components/Projects_data";
+import { metadata } from "./layout";
 import React from "react";
+
+
+
+metadata.title = "HOME";
 
 export default function page() {
   return (

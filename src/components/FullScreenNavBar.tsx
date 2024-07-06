@@ -33,7 +33,7 @@ function MobileNav({
             </Link>
             <Link
               className="text-6xl font-black hover:text-red-500  "
-              href="/About"
+              href="/About_Me"
               onClick={() => setOpen(!open)}
             >
               About
@@ -47,7 +47,7 @@ function MobileNav({
             </Link>
             <Link
               className="text-6xl font-black hover:text-red-500 "
-              href="/Projects"
+              href="/My_Projects"
               onClick={() => setOpen(!open)}
             >
               Projects
