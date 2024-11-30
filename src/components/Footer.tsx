@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="relative  text-white flex   w-full h-[150px]   sm:flex-col  lg:flex-row md:flex-row flex-col  sm:justify-around lg:justify-around md:justify-around justify-around items-center ">
       <div className=" flex space-x-10 ">
-        <Link href="/Projects" className="hover:text-red-700">
+        <Link href="/My_Projects" className="hover:text-red-700">
           <p>Projects</p>
         </Link>
         <Link href="/Contact_Me" className="hover:text-red-700">

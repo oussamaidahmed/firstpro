@@ -39,7 +39,7 @@ export default function Form() {
               type="text"
               placeholder="Your Name"
               className="border-b-2 border-black  focus:outline-none "
-              autoFocus
+              
             />
             {errors.name && (
               <p className="text-red-500">{`${errors.name.message}`}</p>
