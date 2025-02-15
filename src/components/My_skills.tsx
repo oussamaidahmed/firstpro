@@ -55,7 +55,7 @@ export default function My_skills() {
       <ul className=" grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 grid-cols-2   gap-6  pt-6 w-auto max-w-[600px]">
         {skills.map((skill) => (
           <li key={skill.name} className="flex gap-2">
-            <Image src={skill.src} alt={skill.name} width={20} height={15} />
+            <Image src={skill.src} alt={skill.name} width={25} height={15} />
             <span className=" font-medium" >{skill.name}</span>
           </li>
         ))}
